@@ -142,6 +142,60 @@ namespace InfWeb.FakerSharp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to implement, utilize, integrate, streamline, optimize, evolve, transform, embrace, enable, orchestrate, leverage, reinvent, aggregate, architect, enhance, incentivize, morph, empower, envisioneer, monetize, harness, facilitate, seize, disintermediate, synergize, strategize, deploy, brand, grow, target, syndicate, synthesize, deliver, mesh, incubate, engage, maximize, benchmark, expedite, reintermediate, whiteboard, visualize, repurpose, innovate, scale, unleash, drive, extend, engineer, revolutionize, generat [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyBS1 {
+            get {
+                return ResourceManager.GetString("CompanyBS1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to clicks-and-mortar, value-added, vertical, proactive, robust, revolutionary, scalable, leading-edge, innovative, intuitive, strategic, e-business, mission-critical, sticky, one-to-one, 24/7, end-to-end, global, B2B, B2C, granular, frictionless, virtual, viral, dynamic, 24/365, best-of-breed, killer, magnetic, bleeding-edge, web-enabled, interactive, dot-com, sexy, back-end, real-time, efficient, front-end, distributed, seamless, extensible, turn-key, world-class, open-source, cross-platform, cross-media, syn [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyBS2 {
+            get {
+                return ResourceManager.GetString("CompanyBS2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to synergies, web-readiness, paradigms, markets, partnerships, infrastructures, platforms, initiatives, channels, eyeballs, communities, ROI, solutions, e-tailers, e-services, action-items, portals, niches, technologies, content, vortals, supply-chains, convergence, relationships, architectures, interfaces, e-markets, e-commerce, systems, bandwidth, infomediaries, models, mindshare, deliverables, users, schemas, networks, applications, metrics, e-business, functionalities, experiences, web services, methodolog [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyBS3 {
+            get {
+                return ResourceManager.GetString("CompanyBS3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adaptive, Advanced, Ameliorated, Assimilated, Automated, Balanced, Business-focused, Centralized, Cloned, Compatible, Configurable, Cross-group, Cross-platform, Customer-focused, Customizable, Decentralized, De-engineered, Devolved, Digitized, Distributed, Diverse, Down-sized, Enhanced, Enterprise-wide, Ergonomic, Exclusive, Expanded, Extended, Face to face, Focused, Front-line, Fully-configurable, Function-based, Fundamental, Future-proofed, Grass-roots, Horizontal, Implemented, Innovative, Integrated, Int [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyCatchPhrase1 {
+            get {
+                return ResourceManager.GetString("CompanyCatchPhrase1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24 hour, 24/7, 3rd generation, 4th generation, 5th generation, 6th generation, actuating, analyzing, assymetric, asynchronous, attitude-oriented, background, bandwidth-monitored, bi-directional, bifurcated, bottom-line, clear-thinking, client-driven, client-server, coherent, cohesive, composite, context-sensitive, contextually-based, content-based, dedicated, demand-driven, didactic, directional, discrete, disintermediate, dynamic, eco-centric, empowering, encompassing, even-keeled, executive, explicit, exu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyCatchPhrase2 {
+            get {
+                return ResourceManager.GetString("CompanyCatchPhrase2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ability, access, adapter, algorithm, alliance, analyzer, application, approach, architecture, archive, artificial intelligence, array, attitude, benchmark, budgetary management, capability, capacity, challenge, circuit, collaboration, complexity, concept, conglomeration, contingency, core, customer loyalty, database, data-warehouse, definition, emulation, encoding, encryption, extranet, firmware, flexibility, focus group, forecast, frame, framework, function, functionalities, Graphic Interface, groupware, G [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CompanyCatchPhrase3 {
+            get {
+                return ResourceManager.GetString("CompanyCatchPhrase3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inc, and Sons, LLC, Group.
         /// </summary>
         internal static string CompanySuffix {

@@ -10,7 +10,7 @@ namespace InfWeb.FakerSharp
 	{
 		private static readonly char[] LETTERS = "abcdefghijklmnopqrstuwxyz".ToArray();
 
-		private static Random random = new Random();
+		protected static Random random = new Random();
 
 		/// <summary>
 		/// Receives a string and replace the number placeholders with actual numbers
