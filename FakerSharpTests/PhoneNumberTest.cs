@@ -8,11 +8,11 @@ namespace FakerSharpTests
     
     
     /// <summary>
-    ///This is a test class for BaseTest and is intended
-    ///to contain all BaseTest Unit Tests
+    ///This is a test class for PhoneNumberTest and is intended
+    ///to contain all PhoneNumberTest Unit Tests
     ///</summary>
 	[TestClass()]
-	public class BaseTest
+	public class PhoneNumberTest
 	{
 
 
@@ -66,52 +66,14 @@ namespace FakerSharpTests
 
 
 		/// <summary>
-		///A test for Numerify
+		///A test for Number
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void NumerifyTest()
+		public void NumberTest()
 		{
-			string numberString = "(###) ###-####";
-			string actual = Base_Accessor.Numerify(numberString);
-			Assert.IsTrue(new Regex(@"\(\d{3}\) \d{3}\-\d{4}").IsMatch(actual));
-		}
-
-		/// <summary>
-		///A test for Letterify
-		///</summary>
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void LetterifyTest()
-		{
-			string letterString = "string to be replac?d";
 			string actual;
-			actual = Base_Accessor.Letterify(letterString);
-			Assert.IsTrue(new Regex(@"string to be replac[\w]d").IsMatch(actual));
-			Assert.IsFalse(actual.Contains("?"));
-		}
-
-		/// <summary>
-		///A test for Bothify
-		///</summary>
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void BothifyTest()
-		{
-			string str = "10# Driveway, SomeC?ty";
-			var expected = new Regex(@"10[\d] Driveway, SomeC[\w]ty");
-			string actual;
-			actual = Base_Accessor.Bothify(str);
-			Assert.IsTrue(expected.IsMatch(actual));
-		}
-
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void FetchTest()
-		{
-			string str = "AddressStreetSuffix";
-			string actual = Base_Accessor.Fetch(str);
-			Assert.IsTrue(FakerSharp.Properties.Strings.AddressStreetSuffix.Contains(actual));
+			actual = PhoneNumber.Number;
+			Assert.IsTrue(new Regex(@"\d+").IsMatch(actual));
 		}
 	}
 }

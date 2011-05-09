@@ -1,18 +1,21 @@
 ﻿using FakerSharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Text.RegularExpressions;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace FakerSharpTests
 {
     
     
     /// <summary>
-    ///This is a test class for BaseTest and is intended
-    ///to contain all BaseTest Unit Tests
+    ///This is a test class for IEnumerableExtensionTest and is intended
+    ///to contain all IEnumerableExtensionTest Unit Tests
     ///</summary>
 	[TestClass()]
-	public class BaseTest
+	public class IEnumerableExtensionTest
 	{
 
 
@@ -66,52 +69,33 @@ namespace FakerSharpTests
 
 
 		/// <summary>
-		///A test for Numerify
+		///A test for Pick
 		///</summary>
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void NumerifyTest()
+		public void PickTestHelper<TResult>()
 		{
-			string numberString = "(###) ###-####";
-			string actual = Base_Accessor.Numerify(numberString);
-			Assert.IsTrue(new Regex(@"\(\d{3}\) \d{3}\-\d{4}").IsMatch(actual));
+			IEnumerable<TResult> collection = new TResult[10];
+			
+			TResult actual;
+			actual = IEnumerableExtension.Pick<TResult>(collection);
+			Assert.IsTrue(collection.Contains(actual));
+		}
+
+		[TestMethod()]
+		public void PickTest()
+		{
+			PickTestHelper<GenericParameterHelper>();
 		}
 
 		/// <summary>
-		///A test for Letterify
+		///A test for Pick
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void LetterifyTest()
+		public void PickTest1()
 		{
-			string letterString = "string to be replac?d";
-			string actual;
-			actual = Base_Accessor.Letterify(letterString);
-			Assert.IsTrue(new Regex(@"string to be replac[\w]d").IsMatch(actual));
-			Assert.IsFalse(actual.Contains("?"));
-		}
-
-		/// <summary>
-		///A test for Bothify
-		///</summary>
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void BothifyTest()
-		{
-			string str = "10# Driveway, SomeC?ty";
-			var expected = new Regex(@"10[\d] Driveway, SomeC[\w]ty");
-			string actual;
-			actual = Base_Accessor.Bothify(str);
-			Assert.IsTrue(expected.IsMatch(actual));
-		}
-
-		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void FetchTest()
-		{
-			string str = "AddressStreetSuffix";
-			string actual = Base_Accessor.Fetch(str);
-			Assert.IsTrue(FakerSharp.Properties.Strings.AddressStreetSuffix.Contains(actual));
+			IEnumerable collection = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+			object actual;
+			actual = IEnumerableExtension.Pick(collection);
+			Assert.IsTrue(collection.Cast<int>().Contains((int)actual));
 		}
 	}
 }

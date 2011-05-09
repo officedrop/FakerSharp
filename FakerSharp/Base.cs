@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public abstract class Base
-	{
+	public abstract class Base {
 		private static readonly char[] LETTERS = "abcdefghijklmnopqrstuwxyz".ToArray();
 
 		protected static Random random = new Random();
@@ -45,10 +45,14 @@ namespace InfWeb.FakerSharp
 		{
 			return Properties.Strings.ResourceManager.GetString(key).Split(',').Select(e => e.Trim()).Pick();
 		}
+	}
 
+	public abstract class Base<TChild> : Base
+		where TChild : Base
+	{
 		protected static string TypeFetch(string key)
 		{
-			return Fetch(string.Format("{0}{1}", System.Reflection.MethodBase.GetCurrentMethod().ReflectedType.Name, key));
+			return Fetch(string.Format("{0}{1}", typeof(TChild).Name, key));
 		}
 	}
 

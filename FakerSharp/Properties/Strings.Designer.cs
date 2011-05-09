@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InfWeb.FakerSharp.Properties {
+namespace FakerSharp.Properties {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace InfWeb.FakerSharp.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings {
+    public class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace InfWeb.FakerSharp.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("InfWeb.FakerSharp.Properties.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FakerSharp.Properties.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace InfWeb.FakerSharp.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to North, East, West, South, New, Lake, Port.
         /// </summary>
-        internal static string AddressCityPrefix {
+        public static string AddressCityPrefix {
             get {
                 return ResourceManager.GetString("AddressCityPrefix", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire.
         /// </summary>
-        internal static string AddressCitySuffix {
+        public static string AddressCitySuffix {
             get {
                 return ResourceManager.GetString("AddressCitySuffix", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Anguilla, Antarctica (the territory South of 60 deg S), Antigua and Barbuda, Argentina, Armenia, Aruba, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Bosnia and Herzegovina, Botswana, Bouvet Island (Bouvetoya), Brazil, British Indian Ocean Territory (Chagos Archipelago), British Virgin Islands, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cambodia, Camer [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string AddressCountry {
+        public static string AddressCountry {
             get {
                 return ResourceManager.GetString("AddressCountry", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to #####, #####-####.
         /// </summary>
-        internal static string AddressPostcode {
+        public static string AddressPostcode {
             get {
                 return ResourceManager.GetString("AddressPostcode", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Apt. ###, Suite ###.
         /// </summary>
-        internal static string AddressSecondaryAddress {
+        public static string AddressSecondaryAddress {
             get {
                 return ResourceManager.GetString("AddressSecondaryAddress", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string AddressState {
+        public static string AddressState {
             get {
                 return ResourceManager.GetString("AddressState", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to AL, AK, AS, AZ, AR, CA, CO, CT, DE, DC, FM, FL, GA, GU, HI, ID, IL, IN, IA, KS, KY, LA, ME, MH, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, MP, OH, OK, OR, PW, PA, PR, RI, SC, SD, TN, TX, UT, VT, VI, VA, WA, WV, WI, WY, AE, AA, AP.
         /// </summary>
-        internal static string AddressStateAbbr {
+        public static string AddressStateAbbr {
             get {
                 return ResourceManager.GetString("AddressStateAbbr", resourceCulture);
             }
@@ -126,16 +126,16 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to #####, ####, ###.
         /// </summary>
-        internal static string AddressStreeAddress {
+        public static string AddressStreetAddress {
             get {
-                return ResourceManager.GetString("AddressStreeAddress", resourceCulture);
+                return ResourceManager.GetString("AddressStreetAddress", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Alley, Avenue, Branch, Bridge, Brook, Brooks, Burg, Burgs, Bypass, Camp, Canyon, Cape, Causeway, Center, Centers, Circle, Circles, Cliff, Cliffs, Club, Common, Corner, Corners, Course, Court, Courts, Cove, Coves, Creek, Crescent, Crest, Crossing, Crossroad, Curve, Dale, Dam, Divide, Drive, Drive, Drives, Estate, Estates, Expressway, Extension, Extensions, Fall, Falls, Ferry, Field, Fields, Flat, Flats, Ford, Fords, Forest, Forge, Forges, Fork, Forks, Fort, Freeway, Garden, Gardens, Gateway, Glen, Glens, Gre [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string AddressStreetSuffix {
+        public static string AddressStreetSuffix {
             get {
                 return ResourceManager.GetString("AddressStreetSuffix", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to implement, utilize, integrate, streamline, optimize, evolve, transform, embrace, enable, orchestrate, leverage, reinvent, aggregate, architect, enhance, incentivize, morph, empower, envisioneer, monetize, harness, facilitate, seize, disintermediate, synergize, strategize, deploy, brand, grow, target, syndicate, synthesize, deliver, mesh, incubate, engage, maximize, benchmark, expedite, reintermediate, whiteboard, visualize, repurpose, innovate, scale, unleash, drive, extend, engineer, revolutionize, generat [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyBS1 {
+        public static string CompanyBS1 {
             get {
                 return ResourceManager.GetString("CompanyBS1", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to clicks-and-mortar, value-added, vertical, proactive, robust, revolutionary, scalable, leading-edge, innovative, intuitive, strategic, e-business, mission-critical, sticky, one-to-one, 24/7, end-to-end, global, B2B, B2C, granular, frictionless, virtual, viral, dynamic, 24/365, best-of-breed, killer, magnetic, bleeding-edge, web-enabled, interactive, dot-com, sexy, back-end, real-time, efficient, front-end, distributed, seamless, extensible, turn-key, world-class, open-source, cross-platform, cross-media, syn [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyBS2 {
+        public static string CompanyBS2 {
             get {
                 return ResourceManager.GetString("CompanyBS2", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to synergies, web-readiness, paradigms, markets, partnerships, infrastructures, platforms, initiatives, channels, eyeballs, communities, ROI, solutions, e-tailers, e-services, action-items, portals, niches, technologies, content, vortals, supply-chains, convergence, relationships, architectures, interfaces, e-markets, e-commerce, systems, bandwidth, infomediaries, models, mindshare, deliverables, users, schemas, networks, applications, metrics, e-business, functionalities, experiences, web services, methodolog [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyBS3 {
+        public static string CompanyBS3 {
             get {
                 return ResourceManager.GetString("CompanyBS3", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Adaptive, Advanced, Ameliorated, Assimilated, Automated, Balanced, Business-focused, Centralized, Cloned, Compatible, Configurable, Cross-group, Cross-platform, Customer-focused, Customizable, Decentralized, De-engineered, Devolved, Digitized, Distributed, Diverse, Down-sized, Enhanced, Enterprise-wide, Ergonomic, Exclusive, Expanded, Extended, Face to face, Focused, Front-line, Fully-configurable, Function-based, Fundamental, Future-proofed, Grass-roots, Horizontal, Implemented, Innovative, Integrated, Int [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyCatchPhrase1 {
+        public static string CompanyCatchPhrase1 {
             get {
                 return ResourceManager.GetString("CompanyCatchPhrase1", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 24 hour, 24/7, 3rd generation, 4th generation, 5th generation, 6th generation, actuating, analyzing, assymetric, asynchronous, attitude-oriented, background, bandwidth-monitored, bi-directional, bifurcated, bottom-line, clear-thinking, client-driven, client-server, coherent, cohesive, composite, context-sensitive, contextually-based, content-based, dedicated, demand-driven, didactic, directional, discrete, disintermediate, dynamic, eco-centric, empowering, encompassing, even-keeled, executive, explicit, exu [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyCatchPhrase2 {
+        public static string CompanyCatchPhrase2 {
             get {
                 return ResourceManager.GetString("CompanyCatchPhrase2", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to ability, access, adapter, algorithm, alliance, analyzer, application, approach, architecture, archive, artificial intelligence, array, attitude, benchmark, budgetary management, capability, capacity, challenge, circuit, collaboration, complexity, concept, conglomeration, contingency, core, customer loyalty, database, data-warehouse, definition, emulation, encoding, encryption, extranet, firmware, flexibility, focus group, forecast, frame, framework, function, functionalities, Graphic Interface, groupware, G [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CompanyCatchPhrase3 {
+        public static string CompanyCatchPhrase3 {
             get {
                 return ResourceManager.GetString("CompanyCatchPhrase3", resourceCulture);
             }
@@ -198,16 +198,25 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Inc, and Sons, LLC, Group.
         /// </summary>
-        internal static string CompanySuffix {
+        public static string CompanySuffix {
             get {
                 return ResourceManager.GetString("CompanySuffix", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to com, biz, info, name, net, org.
+        /// </summary>
+        public static string InternetDomainSuffix {
+            get {
+                return ResourceManager.GetString("InternetDomainSuffix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to gmail.com, yahoo.com, hotmail.com.
         /// </summary>
-        internal static string InternetFreeEmail {
+        public static string InternetFreeEmail {
             get {
                 return ResourceManager.GetString("InternetFreeEmail", resourceCulture);
             }
@@ -216,7 +225,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to alias, consequatur, aut, perferendis, sit, voluptatem, accusantium, doloremque, aperiam, eaque, ipsa, quae, ab, illo, inventore, veritatis, et, quasi, architecto, beatae, vitae, dicta, sunt, explicabo, aspernatur, aut, odit, aut, fugit, sed, quia, consequuntur, magni, dolores, eos, qui, ratione, voluptatem, sequi, nesciunt, neque, dolorem, ipsum, quia, dolor, sit, amet, consectetur, adipisci, velit, sed, quia, non, numquam, eius, modi, tempora, incidunt, ut, labore, et, dolore, magnam, aliquam, quaerat, vol [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string LoremWords {
+        public static string LoremWords {
             get {
                 return ResourceManager.GetString("LoremWords", resourceCulture);
             }
@@ -225,7 +234,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Aaliyah, Aaron, Abagail, Abbey, Abbie, Abbigail, Abby, Abdiel, Abdul, Abdullah, Abe, Abel, Abelardo, Abigail, Abigale, Abigayle, Abner, Abraham, Ada, Adah, Adalberto, Adaline, Adam, Adan, Addie, Addison, Adela, Adelbert, Adele, Adelia, Adeline, Adell, Adella, Adelle, Aditya, Adolf, Adolfo, Adolph, Adolphus, Adonis, Adrain, Adrian, Adriana, Adrianna, Adriel, Adrien, Adrienne, Afton, Aglae, Agnes, Agustin, Agustina, Ahmad, Ahmed, Aida, Aidan, Aiden, Aileen, Aimee, Aisha, Aiyana, Akeem, Al, Alaina, Alan, Alana [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string NameFirstName {
+        public static string NameFirstName {
             get {
                 return ResourceManager.GetString("NameFirstName", resourceCulture);
             }
@@ -234,16 +243,25 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to :Prefix :FirstName :LastName, :FirstName :LastName :Suffix, :FirstName :LastName,  :FirstName :LastName, :FirstName :LastName, :FirstName :LastName.
         /// </summary>
-        internal static string NameFormats {
+        public static string NameFormats {
             get {
                 return ResourceManager.GetString("NameFormats", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Abbott, Abernathy, Abshire, Adams, Altenwerth, Anderson, Ankunding, Armstrong, Auer, Aufderhar, Bahringer, Bailey, Balistreri, Barrows, Bartell, Bartoletti, Barton, Bashirian, Batz, Bauch, Baumbach, Bayer, Beahan, Beatty, Bechtelar, Becker, Bednar, Beer, Beier, Berge, Bergnaum, Bergstrom, Bernhard, Bernier, Bins, Blanda, Blick, Block, Bode, Boehm, Bogan, Bogisich, Borer, Bosco, Botsford, Boyer, Boyle, Bradtke, Brakus, Braun, Breitenberg, Brekke, Brown, Bruen, Buckridge, Carroll, Carter, Cartwright, Casper,  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string NameLastName {
+            get {
+                return ResourceManager.GetString("NameLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mr., Mrs., Ms., Miss, Dr..
         /// </summary>
-        internal static string NamePrefix {
+        public static string NamePrefix {
             get {
                 return ResourceManager.GetString("NamePrefix", resourceCulture);
             }
@@ -252,7 +270,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Jr., Sr., I, II, III, IV, V, MD, DDS, PhD, DVM.
         /// </summary>
-        internal static string NameSuffix {
+        public static string NameSuffix {
             get {
                 return ResourceManager.GetString("NameSuffix", resourceCulture);
             }
@@ -261,7 +279,7 @@ namespace InfWeb.FakerSharp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to ###-###-####, (###)###-####, 1-###-###-####, ###.###.####, ###-###-####, (###)###-####, 1-###-###-####, ###.###.####, ###-###-#### x###, (###)###-#### x###, 1-###-###-#### x###, ###.###.#### x###, ###-###-#### x####, (###)###-#### x####, 1-###-###-#### x####, ###.###.#### x####, ###-###-#### x#####, (###)###-#### x#####, 1-###-###-#### x#####, ###.###.#### x#####.
         /// </summary>
-        internal static string PhoneNumberFormats {
+        public static string PhoneNumberFormats {
             get {
                 return ResourceManager.GetString("PhoneNumberFormats", resourceCulture);
             }

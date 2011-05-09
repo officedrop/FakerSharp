@@ -1,18 +1,19 @@
 ﻿using FakerSharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Text.RegularExpressions;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace FakerSharpTests
 {
     
     
     /// <summary>
-    ///This is a test class for BaseTest and is intended
-    ///to contain all BaseTest Unit Tests
+    ///This is a test class for CompanyTest and is intended
+    ///to contain all CompanyTest Unit Tests
     ///</summary>
 	[TestClass()]
-	public class BaseTest
+	public class CompanyTest
 	{
 
 
@@ -66,52 +67,51 @@ namespace FakerSharpTests
 
 
 		/// <summary>
-		///A test for Numerify
+		///A test for BS
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void NumerifyTest()
+		public void BSTest()
 		{
-			string numberString = "(###) ###-####";
-			string actual = Base_Accessor.Numerify(numberString);
-			Assert.IsTrue(new Regex(@"\(\d{3}\) \d{3}\-\d{4}").IsMatch(actual));
+			string actual;
+			actual = Company.BS;
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyBS1.Split(',').Any(s => actual.Contains(s.Trim())));
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyBS2.Split(',').Any(s => actual.Contains(s.Trim())));
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyBS3.Split(',').Any(s => actual.Contains(s.Trim())));
 		}
 
 		/// <summary>
-		///A test for Letterify
+		///A test for CatchPhrase
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void LetterifyTest()
+		public void CatchPhraseTest()
 		{
-			string letterString = "string to be replac?d";
 			string actual;
-			actual = Base_Accessor.Letterify(letterString);
-			Assert.IsTrue(new Regex(@"string to be replac[\w]d").IsMatch(actual));
-			Assert.IsFalse(actual.Contains("?"));
+			actual = Company.CatchPhrase;
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyCatchPhrase1.Split(',').Any(s => actual.Contains(s.Trim())));
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyCatchPhrase2.Split(',').Any(s => actual.Contains(s.Trim())));
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanyCatchPhrase3.Split(',').Any(s => actual.Contains(s.Trim())));
 		}
 
 		/// <summary>
-		///A test for Bothify
+		///A test for Name
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void BothifyTest()
+		public void NameTest()
 		{
-			string str = "10# Driveway, SomeC?ty";
-			var expected = new Regex(@"10[\d] Driveway, SomeC[\w]ty");
 			string actual;
-			actual = Base_Accessor.Bothify(str);
-			Assert.IsTrue(expected.IsMatch(actual));
+			actual = Company.Name;
+			Assert.IsTrue(FakerSharp.Properties.Strings.NameLastName.Split(',').Any(s => actual.Contains(s.Trim())));
 		}
 
+		/// <summary>
+		///A test for Suffix
+		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void FetchTest()
+		public void SuffixTest()
 		{
-			string str = "AddressStreetSuffix";
-			string actual = Base_Accessor.Fetch(str);
-			Assert.IsTrue(FakerSharp.Properties.Strings.AddressStreetSuffix.Contains(actual));
+			string actual;
+			actual = Company.Suffix;
+			Assert.IsTrue(FakerSharp.Properties.Strings.CompanySuffix.Split(',').Any(s => actual.Contains(s.Trim())));
 		}
 	}
 }

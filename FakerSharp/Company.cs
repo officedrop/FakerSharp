@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public class Company : Base
+	public class Company : Base<Company>
 	{
 		public static readonly StringGenerator[] FORMATS = new StringGenerator[]{
 			() => string.Join(" ", FakerSharp.Name.LastName, Suffix),

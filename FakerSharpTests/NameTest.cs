@@ -1,18 +1,17 @@
 ﻿using FakerSharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Text.RegularExpressions;
 
 namespace FakerSharpTests
 {
     
     
     /// <summary>
-    ///This is a test class for BaseTest and is intended
-    ///to contain all BaseTest Unit Tests
+    ///This is a test class for NameTest and is intended
+    ///to contain all NameTest Unit Tests
     ///</summary>
 	[TestClass()]
-	public class BaseTest
+	public class NameTest
 	{
 
 
@@ -66,52 +65,58 @@ namespace FakerSharpTests
 
 
 		/// <summary>
-		///A test for Numerify
+		///A test for FirstName
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void NumerifyTest()
+		public void FirstNameTest()
 		{
-			string numberString = "(###) ###-####";
-			string actual = Base_Accessor.Numerify(numberString);
-			Assert.IsTrue(new Regex(@"\(\d{3}\) \d{3}\-\d{4}").IsMatch(actual));
+			string actual;
+			actual = Name.FirstName;
+			Assert.IsTrue(actual.Split(' ').Length == 1);
 		}
 
 		/// <summary>
-		///A test for Letterify
+		///A test for FullName
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void LetterifyTest()
+		public void FullNameTest()
 		{
-			string letterString = "string to be replac?d";
 			string actual;
-			actual = Base_Accessor.Letterify(letterString);
-			Assert.IsTrue(new Regex(@"string to be replac[\w]d").IsMatch(actual));
-			Assert.IsFalse(actual.Contains("?"));
+			actual = Name.FullName;
+			Assert.IsTrue(actual.Split(' ').Length >= 2);
 		}
 
 		/// <summary>
-		///A test for Bothify
+		///A test for LastName
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void BothifyTest()
+		public void LastNameTest()
 		{
-			string str = "10# Driveway, SomeC?ty";
-			var expected = new Regex(@"10[\d] Driveway, SomeC[\w]ty");
 			string actual;
-			actual = Base_Accessor.Bothify(str);
-			Assert.IsTrue(expected.IsMatch(actual));
+			actual = Name.LastName;
+			Assert.IsTrue(actual.Split(' ').Length == 1);
 		}
 
+		/// <summary>
+		///A test for Prefix
+		///</summary>
 		[TestMethod()]
-		[DeploymentItem("FakerSharp.dll")]
-		public void FetchTest()
+		public void PrefixTest()
 		{
-			string str = "AddressStreetSuffix";
-			string actual = Base_Accessor.Fetch(str);
-			Assert.IsTrue(FakerSharp.Properties.Strings.AddressStreetSuffix.Contains(actual));
+			string actual;
+			actual = Name.Prefix;
+			Assert.IsTrue(actual.Split(' ').Length == 1);
+		}
+
+		/// <summary>
+		///A test for Suffix
+		///</summary>
+		[TestMethod()]
+		public void SuffixTest()
+		{
+			string actual;
+			actual = Name.Suffix;
+			Assert.IsTrue(actual.Split(' ').Length == 1);
 		}
 	}
 }

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
 	public static class IEnumerableExtension
 	{
+		private static Random random = new Random((int)DateTime.Now.Ticks);
 		public static object Pick(this IEnumerable collection)
 		{
 			return Pick<object>(collection.Cast<object>());
@@ -15,7 +16,7 @@ namespace InfWeb.FakerSharp
 
 		public static TResult Pick<TResult>(this IEnumerable<TResult> collection)
 		{
-			int idx = new Random().Next(collection.Count());
+			int idx = random.Next(collection.Count());
 			return collection.ElementAt(idx);
 		}
 	}

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public class Lorem : Base
+	public class Lorem : Base<Lorem>
 	{
 		private static readonly string[] loremWords;
 

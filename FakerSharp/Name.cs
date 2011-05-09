@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public class Name : Base
+	public class Name : Base<Name>
 	{
-		public static string Name
+		public static string FullName
 		{
 			get
 			{
-				return new Regex(@":(.+?)(?:[ ]|$)").Replace(TypeFetch("Formats"), match => TypeFetch(match.Groups[0].ToString()));
+				return new Regex(@":(.+?)(?:[ ]|$)").Replace(TypeFetch("Formats"), match => TypeFetch(match.Groups[1].ToString()) + " ").Trim();
 			}
 		}
 
@@ -28,12 +28,12 @@ namespace InfWeb.FakerSharp
 
 		public static string Prefix
 		{
-			get { return TypeFetch("NamePrefix"); }
+			get { return TypeFetch("Prefix"); }
 		}
 
 		public static string Suffix
 		{
-			get { return TypeFetch("NameSuffix"); }
+			get { return TypeFetch("Suffix"); }
 		}
 	}
 }

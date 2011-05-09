@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public class Internet : Base
+	public class Internet : Base<Internet>
 	{
-		private static Converter<string, string> getInternetName = (str) => new Regex(@"\W").Replace(str, "");
+		private static Converter<string, string> getInternetName = (str) => new Regex(@"\W").Replace(str, "").ToLower();
 
 		public static string GetEmail() { return GetEmail(null); }
 		public static string GetEmail(string name)
@@ -65,7 +65,6 @@ namespace InfWeb.FakerSharp
 			}
 		}
 
-		private static int ip_v6_space;
 		public static string IPv6Address
 		{
 			get

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace InfWeb.FakerSharp
+namespace FakerSharp
 {
-	public class Address : Base
+	public class Address : Base<Address>
 	{
 		public static string City
 		{
