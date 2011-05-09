@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakerSharp", "FakerSharp\FakerSharp.csproj", "{74741000-6A9D-4EA8-A85A-1C02038D6DC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakerSharpTests", "FakerSharpTests\FakerSharpTests.csproj", "{3FC7D298-5C10-4E9C-A2E1-981916C85573}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED123947-E470-48D5-BBB2-7B71514F0BDE}"
+	ProjectSection(SolutionItems) = preProject
+		FakerSharp.vsmdi = FakerSharp.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = FakerSharp.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -13,6 +25,10 @@ Global
 		{74741000-6A9D-4EA8-A85A-1C02038D6DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74741000-6A9D-4EA8-A85A-1C02038D6DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74741000-6A9D-4EA8-A85A-1C02038D6DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC7D298-5C10-4E9C-A2E1-981916C85573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC7D298-5C10-4E9C-A2E1-981916C85573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC7D298-5C10-4E9C-A2E1-981916C85573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC7D298-5C10-4E9C-A2E1-981916C85573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

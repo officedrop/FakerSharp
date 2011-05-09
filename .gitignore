@@ -2,3 +2,9 @@
 FakerSharp/obj/
 *.suo
 *.vs10x
+*.vsmdi
+FakerSharp/bin/
+FakerSharpTests/bin/
+FakerSharpTests/obj/
+TestResults/
+*.testsettings
